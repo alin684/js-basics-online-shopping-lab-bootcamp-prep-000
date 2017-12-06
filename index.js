@@ -56,7 +56,7 @@ function total() {
    let itemAndPrices = cart[i];
    let item = Object.keys(itemAndPrices)[0];
    let price = itemAndPrices[item];
-   totes += parseInt(price);
+   totes += price;
    return totes;
 }
 }
