@@ -36,6 +36,9 @@ if (cart.length === 0) {
   }
   console.log(`In your cart, you have ${itemAndPriceList2.join(' and ')}.`);
 } else {
+  let lastItemAndPrice = cart[cart.length];
+  let lastItem = Object.keys(lastItemAndPrice)[0];
+  let lastPrice = lastItemAndPrice[lastItem];
   var itemAndPriceList3 = [];
   for (let i = 0; i < (cart.length-1); i++) {
     let itemAndPrices = cart[i];
@@ -43,9 +46,6 @@ if (cart.length === 0) {
     let price = itemAndPrices[item];
     itemAndPriceList3.push(`${item} at \$${price}`);
   }
-    let lastItemAndPrice = cart[cart.length];
-    let lastItem = Object.keys(lastItemAndPrice)[0];
-    let lastPrice = lastItemAndPrice[lastItem];
   console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}.`);
 }
 }
