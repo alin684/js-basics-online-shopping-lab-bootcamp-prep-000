@@ -51,7 +51,14 @@ if (cart.length === 0) {
 }
 
 function total() {
-  // write your code here
+  var totes = 0;
+  for (let i = 0; i < cart.length; i++) {
+   let itemAndPrices = cart[i];
+   let item = Object.keys(itemAndPrices)[0];
+   let price = itemAndPrices[item];
+   totes += parseInt(price);
+   return totes;
+}
 }
 
 function removeFromCart(item) {
