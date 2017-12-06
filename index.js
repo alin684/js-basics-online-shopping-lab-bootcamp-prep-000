@@ -63,12 +63,13 @@ function total() {
 
 function removeFromCart(item) {
   for (let i = 0, i < cart.length; i++) {
-    if (cart.hasOwnProperty(item)===false) {
-    console.log("That item is not in your cart.");
+    if (cart[i].hasOwnProperty(item)) {
+      let number = 
   } else {
     delete cart[item];
     return cart;
   }
+  console.log("That item is not in your cart.");
 }
 
 function placeOrder(cardNumber) {
