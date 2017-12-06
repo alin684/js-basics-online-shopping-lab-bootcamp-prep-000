@@ -57,8 +57,8 @@ function total() {
    let item = Object.keys(itemAndPrices)[0];
    let price = itemAndPrices[item];
    totes += price;
-   return totes;
-}
+  }
+  return totes;
 }
 
 function removeFromCart(item) {
