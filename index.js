@@ -61,8 +61,8 @@ function total() {
   return totes;
 }
 
-function removeFromCart(item) {
-  // write your code here
+function removeFromCart(removeItem) {
+  
 }
 
 function placeOrder(cardNumber) {
