@@ -43,10 +43,10 @@ if (cart.length === 0) {
     let price = itemAndPrices[item];
     itemAndPriceList3.push(`${item} at \$${price}`);
   }
-    let lastItemAndPrice = cart[cart.length];
+    let lastItemAndPrice = cart[2];
     let lastItem = Object.keys(lastItemAndPrice)[0];
     letlastPrice = lastItemAndPrice[lastItem];
-  console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}`);
+  console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}.`);
 }
 }
 
