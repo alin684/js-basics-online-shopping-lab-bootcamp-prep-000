@@ -40,7 +40,7 @@ if (cart.length === 0) {
   let lastItem = Object.keys(lastItemAndPrice)[0];
   let lastPrice = lastItemAndPrice[lastItem];
   var itemAndPriceList3 = [];
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < (cart.length-1); i++) {
     let itemAndPrices = cart[i];
     let item = Object.keys(itemAndPrices)[0];
     let price = itemAndPrices[item];
