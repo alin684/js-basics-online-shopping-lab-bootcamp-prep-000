@@ -46,7 +46,7 @@ if (cart.length === 0) {
     let price = itemAndPrices[item];
     itemAndPriceList3.push(`${item} at \$${price}`);
   }
-  console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}.`);
+  console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at \$${lastPrice}.`);
 }
 }
 
