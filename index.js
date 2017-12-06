@@ -36,7 +36,7 @@ if (cart.length === 0) {
   }
   console.log(`In your cart, you have ${itemAndPriceList2.join(' and ')}.`);
 } else {
-  let lastItemAndPrice = cart[cart.length];
+  let lastItemAndPrice = cart[cart.length-1];
   let lastItem = Object.keys(lastItemAndPrice)[0];
   let lastPrice = lastItemAndPrice[lastItem];
   var itemAndPriceList3 = [];
