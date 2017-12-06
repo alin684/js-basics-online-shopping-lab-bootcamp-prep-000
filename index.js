@@ -61,11 +61,11 @@ function total() {
   return totes;
 }
 
-function removeFromCart(removeItem) {
-  if (cart.hasOwnProperty(removeItem)===false) {
+function removeFromCart(item) {
+  if (cart.hasOwnProperty(item)===false) {
     console.log("That item is not in your cart.");
   } else {
-    delete cart[removeItem];
+    delete cart[item];
     return cart;
   }
 }
