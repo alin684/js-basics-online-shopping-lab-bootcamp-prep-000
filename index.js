@@ -10,11 +10,44 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ var itemPrice = Math.floor((Math.random() * 100) + 1); 
+ cart.push({[item]: itemPrice});
+ console.log(item + " has been added to your cart.");
+ return cart;
 }
 
 function viewCart() {
-  // write your code here
+if (cart.length === 0) {
+  console.log("Your shopping cart is empty.");
+} else if (cart.length === 1) {
+  var itemAndPriceList = [];
+  let itemAndPrices = cart[0];
+  let item = Object.keys(itemAndPrices)[0];
+  let price = itemAndPrices[item];
+    itemAndPriceList.push(`${item} at \$${price}`);
+  console.log(`In your cart, you have ${itemAndPriceList}.`);
+} else if (cart.length === 2) {
+  var itemAndPriceList2 = [];
+  for (let i = 0; i < cart.length; i++) {
+    let itemAndPrices = cart[i];
+    let item = Object.keys(itemAndPrices)[0];
+    let price = itemAndPrices[item];
+    itemAndPriceList2.push(`${item} at \$${price}`);
+  }
+  console.log(`In your cart, you have ${itemAndPriceList2.join(' and ')}.`);
+} else {
+  var itemAndPriceList3 = [];
+  for (let i = 0; i < (cart.length-1); i++) {
+    let itemAndPrices = cart[i];
+    let item = Object.keys(itemAndPrices)[0];
+    let price = itemAndPrices[item];
+    itemAndPriceList3.push(`${item} at \$${price}`);
+  }
+    let lastItemAndPrice = cart[cart.length];
+    let lastItem = Object.keys(lastItemAndPrice)[0];
+    letlastPrice = lastItemAndPrice[lastItem];
+  console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}`);
+}
 }
 
 function total() {
