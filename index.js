@@ -45,7 +45,7 @@ if (cart.length === 0) {
   }
     let lastItemAndPrice = cart[2];
     let lastItem = Object.keys(lastItemAndPrice)[0];
-    letlastPrice = lastItemAndPrice[lastItem];
+    let lastPrice = lastItemAndPrice[lastItem];
   console.log(`In your cart, you have ${itemAndPriceList3.join(', ')} and ${lastItem} at $${lastPrice}.`);
 }
 }
