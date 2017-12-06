@@ -76,5 +76,9 @@ return cart;
 }
 
 function placeOrder(cardNumber) {
-  // write your code here}
+  if (cardNumber === null) {
+    console.log{"Sorry, we don't have a credit card on file for you.");
+    e
+  }
+}
 }
